@@ -18,3 +18,24 @@ const reverseString = (str: string): string => {
 console.log(reverseString("typescript"))
 
 
+
+// strong or number
+type strORnum = string | number
+
+const checkType = (value: strORnum) => {
+    if(typeof value === "string"){
+        return "String"
+    }
+    else if(typeof value === 'number'){
+        return "Number"
+    }
+    else{
+        return "Nothing"
+    }
+}
+
+checkType(42)
+
+
+
+
