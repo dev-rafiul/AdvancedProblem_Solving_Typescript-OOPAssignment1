@@ -64,7 +64,6 @@ const getProperty = (obj: any, key: keyof typeof obj) => {
 
 const user = { id: 1, name: "John Doe", age: 21 };
 
-console.log(getProperty(user, "name"));
 
 
 
@@ -112,6 +111,9 @@ const myBook = {
 
 
 
+
+
+
 class Person {
   name: string;
   age: number;
@@ -137,4 +139,24 @@ class Student extends Person {
 
 const student = new Student("Alice", 20, "A");
 
-console.log(student.getDetails());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function getIntersection(arr1: number[], arr2: number[]) {
+  return arr1.filter((num) => arr2.includes(num));
+}
+
+
+getIntersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7])
