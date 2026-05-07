@@ -34,9 +34,9 @@ const reverseString = (str: string): string => {
 
 
 // strong or number
-type strORnum = string | number
+type StringOrNumber = string | number
 
-const checkType = (value: strORnum) => {
+const checkType = (value: StringOrNumber) => {
     if(typeof value === "string"){
         return "String"
     }
