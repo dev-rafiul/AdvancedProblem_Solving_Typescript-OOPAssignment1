@@ -2,7 +2,13 @@
 const filterEvenNumbers = (numbers: number[]): number[] => {
     return numbers.filter((num) => num % 2 === 0)
 }
-console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6]))
+
+
+
+
+
+
+
 
 
 
@@ -15,7 +21,15 @@ const reverseString = (str: string): string => {
     }
     return result
 }
-console.log(reverseString("typescript"))
+
+
+
+
+
+
+
+
+
 
 
 
@@ -33,8 +47,55 @@ const checkType = (value: strORnum) => {
         return "Nothing"
     }
 }
-
 checkType(42)
+
+
+
+
+
+
+
+const getProperty = (obj: any, key: keyof typeof obj) => {
+  return obj[key];
+}
+
+const user = { id: 1, name: "John Doe", age: 21 };
+
+console.log(getProperty(user, "name"));
+
+
+
+
+
+
+
+interface Book {
+  title: string;
+  author: string;
+  publishedYear: number;
+}
+
+function toggleReadStatus(book: Book) {
+  return {
+    title: book.title,
+    author: book.author,
+    publishedYear: book.publishedYear,
+    isRead: true,
+  };
+}
+
+const myBook = {
+  title: "TypeScript Guide",
+  author: "Jane Doe",
+  publishedYear: 2024,
+};
+
+
+
+
+
+
+
 
 
 
